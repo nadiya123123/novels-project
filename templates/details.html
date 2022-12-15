@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block body %}
+<style>
+    h3{
+    text-align:center;
+    }
+</style>
+<h3>{{novel.name}}</h3>
+<div class="container">
+    <div class="row">
+        <div>
+            <img src="{{novel.img.url}}" height="200" width="300" >
+        </div>
+        <div>
+            <h6>{{novel.year}}</h6>
+            <p>{{novel.desc}}</p>
+            <a class="btn btn-warning" href="/update/1/">Update</a>
+            <a class="btn btn-danger" href="/delete/1/">Delete</a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

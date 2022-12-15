@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block body %}
+<form style="text-align:center;" method="post" action="" enctype="multipart/form-data">
+  {% csrf_token %}
+  <input type="text" name="name" placeholder="Enter Novel Name"><br>
+  <input type="text" name="year" placeholder="Enter The Year Of Publication"><br>
+  <input type="text" name="desc" placeholder="Short Words About Novel..."><br>
+  <input type="file" name="img"><br>
+  <input type="submit">
+</form>
+
+{% endblock %}

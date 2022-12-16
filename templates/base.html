@@ -10,9 +10,10 @@
 <body>
 <!-- As a link -->
 <nav class="navbar navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Novels</a>
+    <a class="navbar-brand" href="#">Novels</a>
     <a href="{% url 'newapp:add_novels' %}" class="btn btn-primary">Add more..</a>
 </nav>
+<br>
 {% block body %}
 {% endblock %}
 </body>

@@ -14,8 +14,9 @@
         <div>
             <h6>{{novel.year}}</h6>
             <p>{{novel.desc}}</p>
-            <a class="btn btn-warning" href="/update/1/">Update</a>
-            <a class="btn btn-danger" href="/delete/1/">Delete</a>
+            <a class="btn btn-warning" href="{% url 'newapp:update' novel.id %}"> Update </a>
+            <a class="btn btn-danger" href="{% url 'newapp:delete' novel.id %}"> Delete </a>
+            <a href="{% url 'newapp:fun1' %}" class="btn btn-primary"><-</a>
         </div>
     </div>
 </div>
